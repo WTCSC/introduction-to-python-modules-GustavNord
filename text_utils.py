@@ -1,14 +1,14 @@
 def count_chars(text):
-    """
-    Count the number of characters in a text
-    """
+   return len(text) 
 
 def count_words(text):
-    """
-    Count the number of words in a text
-    """
+    num_of_words = text.split()
+    return len(num_of_words)
 
 def count_sentences(text):
-    """
-    Count the number of sentences in a text
-    """
+    dot_count = text.count('.')
+    bang_count = text.count('!')
+    questionmark_count = text.count('?')
+    sum_sentences = dot_count + bang_count + questionmark_count
+    return(sum_sentences)
+    
